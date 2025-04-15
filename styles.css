@@ -283,4 +283,156 @@
     margin-right: 0.75rem;
     border-radius: 6px; /* optional for rounded corners */
   }
+  .article-boxes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
   
+  .article-card {
+    background-color: white;
+    border: 1px solid #e6e0f8;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(123, 44, 191, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+
+  .article-card-title{
+    color:#6a11cb;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    font-weight: bold;
+
+  }
+  
+  .article-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 20px rgba(123, 44, 191, 0.2);
+  }
+  
+  .article-card p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .article-card a {
+    color: #7b2cbf;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .article-card a:hover {
+    text-decoration: underline;
+  }
+  /* Blog Cards Container */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+/* Blog Card Style */
+.blog-card {
+  background-color: white;
+  border: 1px solid #e6e0f8;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.1);
+  padding: 2rem;
+  max-width: 400px;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 20px rgba(123, 44, 191, 0.2);
+}
+
+.blog-card-title {
+  color: #6a11cb;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.blog-card-author {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card-excerpt {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Full Article Modal */
+.blog-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 2rem;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.blog-modal-content {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.blog-modal-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}

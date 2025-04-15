@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Digital Dreamers</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="blog.html">Dreamer Feed</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+  <div class="blog-container">
+    <!-- Blog Cards -->
+    <div class="blog-card" onclick="openBlog(1)">
+      <div class="blog-card-title">Why Tech Empowers Youth</div>
+      <div class="blog-card-author">By Salome C. V.</div>
+      <div class="blog-card-excerpt">Tech isn’t just coding — it’s problem-solving, storytelling, and community building...</div>
+    </div>
+
+    <div class="blog-card" onclick="openBlog(2)">
+      <div class="blog-card-title">The Future of Coding Education</div>
+      <div class="blog-card-author">By Anya B.</div>
+      <div class="blog-card-excerpt">Coding is more than just syntax. It’s about creativity and the future of education...</div>
+    </div>
+  </div>
+
+  <!-- Modal for Full Article -->
+  <div id="blog-modal" class="blog-modal">
+    <div class="blog-modal-content">
+      <button class="blog-modal-close" onclick="closeBlog()">×</button>
+      <h2 id="modal-title">Full Article Title</h2>
+      <div id="modal-content">
+        <p>Full article content goes here. This part scrolls independently.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Blog data
+    const blogs = [
+      {
+        id: 1,
+        title: 'Why Tech Empowers Youth',
+        author: 'Salome C. V.',
+        excerpt: 'Tech isn’t just coding — it’s problem-solving, storytelling, and community building...',
+        content: 'Full article goes here. This part scrolls independently. You can fill it with any amount of content you want. It talks about how tech can empower youth by solving problems, creating opportunities, and learning new skills...'
+      },
+      {
+        id: 2,
+        title: 'The Future of Coding Education',
+        author: 'Anya B.',
+        excerpt: 'Coding is more than just syntax. It’s about creativity and the future of education...',
+        content: 'Full article goes here. The future of coding education is exciting, as new methods and tools are being developed to teach coding in creative and effective ways...'
+      }
+      // Add more blogs as necessary
+    ];
+
+    function openBlog(id) {
+      const blog = blogs.find(blog => blog.id === id);
+      document.getElementById('modal-title').textContent = blog.title;
+      document.getElementById('modal-content').innerHTML = `<p>${blog.content}</p>`;
+      document.getElementById('blog-modal').classList.add('active');
+    }
+
+    function closeBlog() {
+      document.getElementById('blog-modal').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
