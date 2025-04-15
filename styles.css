@@ -436,6 +436,9 @@
   color: #fff;
   cursor: pointer;
 }
+.modal-title{
+  color:#5f1ab3;
+}
 /* Contact Section */
 .contact-section {
   padding: 4rem 2rem;
