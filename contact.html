@@ -7,31 +7,38 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="images/DDP-Logo.png" alt="Digital Dreamers Logo" />
-          <span>Digital Dreamers</span>
+  <header>
+    <div class="logo">
+      <span>Digital Dreamers</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#mission">Mission</a>
+      <a href="projects.html">Projects</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section lavender contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have a question, idea, or want to get involved? We'd love to hear from you!</p>
+      <p> Or get in touch directly at: digitaldreamersprojectinfo@gmail.com </p>
+      <form class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="#about">About</a>
-          <a href="index.html#mission">Mission</a>
-          <a href="projects.html">Projects</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-    </header>
-      
-
-  <section class="img">
-
-
-  </section>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Dream in Code. Lead with Heart.</h1>
-      <p>We're on a mission to make tech education accessible, inclusive, and inspiring for all.</p>
-      <a href="#contact" class="cta-button">Get Involved</a>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
     </div>
   </section>
 
@@ -39,4 +46,4 @@
     &copy; 2025 Digital Dreamers. Built with 💜 by passionate students.
   </footer>
 </body>
-</html>
+
