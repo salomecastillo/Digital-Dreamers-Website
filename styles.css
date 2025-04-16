@@ -557,5 +557,58 @@
 .section {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
+/* Logo and header alignment */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 5vh;
+  vertical-align: middle;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #7b2cbf;
+}
+
+/* Navigation menu */
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fdfaff;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-top: 1px solid #e6e0f8;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 1rem 0;
+  }
+}
+

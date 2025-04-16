@@ -8,16 +8,23 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="images/DDP-Logo.png" alt="Digital Dreamers Logo" style="height: 10vh; vertical-align: middle;">
+    <div class="logo-container">
+      <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
+      <div class="logo">Digital Dreamers</div>
     </div>
-    <nav>
+  
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+  
+    <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html">Dreamer Feed</a>
       <a href="projects.html">Projects</a>
-      <a href="/contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+  
   
 
   <section class="section lavender contact-section">
@@ -46,5 +53,14 @@
   <footer>
     &copy; 2025 Digital Dreamers. Built with 💜 by passionate students.
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>

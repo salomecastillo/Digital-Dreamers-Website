@@ -8,14 +8,24 @@
 </head>
 <body>
   <header>
-    <div class="logo">Digital Dreamers</div>
-    <nav>
+    <div class="logo-container">
+      <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
+      <div class="logo">Digital Dreamers</div>
+    </div>
+  
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+  
+    <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html">Dreamer Feed</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+  
+  
 
   <section class="hero">
     <div class="hero-content">
@@ -107,19 +117,25 @@
           <tr>
             <td>Tuesday [April 22]</td>
             <td>6:00pm - 7:00 pm</td>
-            <td>Intro to Python</td>
+            <td>Scratch Challenges</td>
             <td>Arlington Street Community Center, Nashua NH</td>
           </tr>
           <tr>
             <td>Tuesday [May 6] </td>
             <td>6:00pm - 7:00 pm</td>
-            <td>Web Design Basics</td>
+            <td>Online Safety 101</td>
             <td>Arlington Street Community Center, Nashua NH</td>
           </tr>
           <tr>
             <td>Tuesday [May 13]</td>
             <td>6:00pm - 7:00 pm</td>
-            <td>Creative Coding Club</td>
+            <td>Intro to robotics programming</td>
+            <td>Arlington Street Community Center, Nashua NH</td>
+          </tr>
+          <tr>
+            <td>Tuesday [May 20]</td>
+            <td>6:00pm - 7:00 pm</td>
+            <td> Scratc Personal Project</td>
             <td>Arlington Street Community Center, Nashua NH</td>
           </tr>
         </tbody>
@@ -133,5 +149,14 @@
   <footer>
     &copy; 2025 Digital Dreamers. Built with 💜 by passionate students.
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
