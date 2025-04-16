@@ -486,3 +486,36 @@
 .contact-form button {
   margin-top: 1rem;
 }
+/* Class Schedule */
+.schedule-table {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.schedule-table table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-table th {
+  background-color: #f3e8ff;
+  color: #5f1ab3;
+  font-weight: bold;
+}
+
+.schedule-table tr:hover {
+  background-color: #faf5ff;
+}
+
