@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Digital Dreamers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
+      <div class="logo">Digital Dreamers</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Dreamer Feed</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Join Digital Dreamers Today!</h1>
+      <p>Be a part of our mission to make tech education accessible and fun for all!</p>
+    </div>
+  </section>
+
+  <section id="join-info" class="section light">
+    <h2>Get Involved With Digital Dreamers</h2>
+    <div class="article-boxes">
+      <!-- Start Your Own Chapter -->
+      <div class="join-card">
+        <div class="article-card-title">Start Your Own Chapter</div>
+        <p>
+          Want to bring Digital Dreamers to your community or school? Start your own chapter and make a difference in your local area! Fill out the form below to get started and receive support from our team.
+        </p>
+        </br>
+        </br>
+        <a href="https://your-start-chapter-form-link.com" target="_blank" class="cta-button" style="color: white;">Start a Chapter</a>
+      </div>
+
+      <!-- Enroll in Our Classes -->
+      <div class="join-card">
+        <div class="article-card-title">Enroll in Our Classes</div>
+        <p>
+          Ready to get hands-on experience in coding? Our free classes are open to all students! Enroll today and start your journey to become a tech leader.
+        </p>
+        </br>
+        <a href="https://your-enroll-class-form-link.com" target="_blank" class="cta-button" style="color: white;">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    2025 Digital Dreamers. Built with 💜 by passionate students.
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
