@@ -622,3 +622,44 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
+.dreamer-section {
+  background-color: #f3e8ff;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #4b0082;
+}
+
+.dreamer-section h2 {
+  font-size: 2.5rem;
+  color: #6a11cb;
+  margin-bottom: 2rem;
+}
+
+.dreamer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.dreamer-description-container {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.dreamer-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.dreamer-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
