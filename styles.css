@@ -648,6 +648,7 @@ nav {
 .dreamer-description-container {
   flex: 1 1 300px;
   max-width: 600px;
+  margin-right: 6vh;
 }
 
 .dreamer-description {
@@ -658,7 +659,7 @@ nav {
 
 .dreamer-image {
   flex: 1 1 300px;
-  max-width: 400px;
+  max-width: 450px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
