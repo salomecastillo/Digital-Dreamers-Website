@@ -35,13 +35,13 @@
       <div class="blog-card-excerpt">At Digital Dreamers, we didn’t just set out to teach kids how to code—we set out to inspire them to dream bigger, build boldly, and believe in their ability to create. As teen co-founders, we’ve faced challenges, grown as leaders, and seen firsthand how tech education can transform lives. This is our story—and it’s only the beginning...</div>
     </div>
     
-    <!-- Blog Card Two  -->
-    <!-- <div class="blog-card" onclick="openBlog(2)">
-      <div class="blog-card-title">The Future of Coding Education</div>
-      <div class="blog-card-author">By Anya B.</div>
-      <div class="blog-card-excerpt">Coding is more than just syntax. It’s about creativity and the future of education...</div>
-    </div>
-  </div> -->
+  <!-- Blog Card Two  -->
+  <div class="blog-card" onclick="openBlog(2)">
+    <div class="blog-card-title">Behind the Scenes: How We Build a Dreamer Community</div>
+    <div class="blog-card-author">By The Digital Dreamers Team</div>
+    <div class="blog-card-excerpt">From creative sparks to collaboration breakthroughs, here’s what goes on behind the scenes at Digital Dreamers. Spoiler: it’s a lot more than just coding...</div>
+  </div>
+
 
   <!-- Modal for Full Article -->
   <div id="blog-modal" class="blog-modal">
@@ -87,11 +87,32 @@
       },
       {
         id: 2,
-        title: 'The Future of Coding Education',
-        author: 'Anya B.',
-        excerpt: 'Coding is more than just syntax. It’s about creativity and the future of education...',
-        content: 'Full article goes here. The future of coding education is exciting, as new methods and tools are being developed to teach coding in creative and effective ways...'
+        title: 'Behind the Scenes: How We Build a Dreamer Community',
+        author: 'The Digital Dreamers Team',
+        excerpt: 'From creative sparks to collaboration breakthroughs, here’s what goes on behind the scenes at Digital Dreamers. Spoiler: it’s a lot more than just coding...',
+        content: `
+          <p>At the heart of our program is a simple belief: when kids are given the space to dream big, learn freely, and support each other — incredible things happen.</p>
+          </br>
+          <p>Every student who walks through our doors brings something unique. Some come with bold ideas, some with quiet curiosity, others with a deep desire to build something real. Our goal is to create a space where all of those dreams are not only welcomed — they’re celebrated, nurtured, and brought to life.</p>
+          </br>
+          <p><strong>🧠 Learning, but Make It Meaningful</strong></p>
+          <p>We believe learning should be hands-on, student-led, and filled with purpose. Whether we’re diving into coding, storytelling, game design, or collaborative challenges, our projects are designed to spark imagination and real-world thinking. Students aren’t just completing tasks — they’re exploring ideas, solving problems, and building things they’re proud of.</p>
+          </br>
+          <p><strong>💬 Growing Together</strong></p>
+          <p>We talk a lot about teamwork here — and that’s because collaboration is at the core of what we do. Our students learn from one another just as much as they learn from instructors. Whether it’s offering feedback, asking for help, or sharing excitement over a classmate’s breakthrough, we create a culture where it’s cool to care and helpful to share.</p>
+          </br>
+          <p><strong>🎮 Where Creativity Meets Tech</strong></p>
+          <p>Many of our students are drawn to games, animation, storytelling, and tech — and we use that as fuel. Instead of telling students to put their interests aside, we ask how we can build <em>with</em> them. We’ve seen platformers inspired by <em>Big Tower Tiny Square</em>, story-driven puzzles, and original characters that start in sketches and end up coded into life.</p>
+          </br>
+          <p><strong>🌱 The Bigger Picture</strong></p>
+          <p>Our dream is to help kids grow not just as learners, but as thinkers, makers, and leaders. That’s why we prioritize project-based work, creativity, collaboration, and confidence-building. Every code they write, every question they ask, every friend they help — it’s all part of something bigger.</p>
+          </br>
+          <p>So if you’ve ever wondered what goes on behind the scenes — it’s a mix of joyful chaos, focused curiosity, and a whole lot of dreaming.</p>
+          </br>
+          <p>We’re proud of the community we’re building — and even prouder of the young people shaping it.</p>
+        `
       }
+
     ];
 
     function openBlog(id) {
