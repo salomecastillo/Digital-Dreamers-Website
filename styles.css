@@ -623,11 +623,12 @@ nav {
   text-align: left;
 }
 .dreamer-section {
-  background-color: #f3e8ff;
+  background: linear-gradient(135deg, #e0c3fc, #f3e8ff);
   padding: 4rem 2rem;
   text-align: center;
   color: #4b0082;
 }
+
 
 .dreamer-section h2 {
   font-size: 2.5rem;
