@@ -794,3 +794,40 @@ nav {
 .donate-button:hover {
   background-color: #5a009c;
 }
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #6a5acd, #836fff);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.75rem;
+  box-shadow: 0 4px 15px rgba(106, 90, 205, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #5d4dbf, #7264f4);
+  box-shadow: 0 6px 18px rgba(106, 90, 205, 0.4);
+  transform: translateY(-2px);
+}
+
+.section-wrapper {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  max-width: 960px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.section-wrapper ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.section-wrapper li {
+  margin-bottom: 1rem;
+}

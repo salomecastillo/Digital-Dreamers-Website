@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join Digital Dreamers</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,11 +12,7 @@
       <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
       <div class="logo">Digital Dreamers</div>
     </div>
-  
-    <div class="hamburger" id="hamburger">
-      &#9776;
-    </div>
-  
+    <div class="hamburger" id="hamburger">&#9776;</div>
     <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html">Dreamer Feed</a>
@@ -30,33 +26,43 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Join Digital Dreamers Today!</h1>
-      <p>Be a part of our mission to make tech education accessible and fun for all!</p>
+      <p>Be a part of our mission to make tech education accessible, inclusive, and empowering for all.</p>
     </div>
   </section>
 
-  <section id="join-info" class="section light">
-    <h2>Get Involved With Digital Dreamers</h2>
-    <div class="article-boxes">
-      <!-- Start Your Own Chapter -->
-      <div class="join-card">
-        <div class="article-card-title">Start Your Own Chapter</div>
-        <p>
-          Want to bring Digital Dreamers to your community or school? Start your own chapter and make a difference in your local area! Fill out the form below to get started and receive support from our team.
-        </p>
-        </br>
-        </br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxV8fNuVSsmki6oMf2Bh-OIXOKKA4clwadQ9eGI9TiAL7AQ/viewform?usp=header" target="_blank" class="cta-button" style="color: white;">Start a Chapter</a>
-      </div>
+  <section class="section light">
+    <div class="section-wrapper">
+      <h2>Start a Digital Dreamers Chapter</h2>
+      <p>Ready to lead change in your school or community? Starting a Digital Dreamers chapter gives you the power to provide free, beginner-friendly tech education to those who may not otherwise have access.</p>
+      <p>As a chapter leader, you’ll receive step-by-step guidance to launch and run your chapter, access to our curriculum and toolkits, mentorship from experienced volunteers, and promotional support to grow your group. You’ll also have the opportunity to make a real impact on the lives of future technologists.</p>
+      <p>Whether you're a student with a vision or an educator who believes in equity, Digital Dreamers will support you every step of the way.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxV8fNuVSsmki6oMf2Bh-OIXOKKA4clwadQ9eGI9TiAL7AQ/viewform?usp=header" target="_blank" class="cta-button">Apply to Start a Chapter</a>
+    </div>
+  </section>
 
-      <!-- Enroll in Our Classes -->
-      <div class="join-card">
-        <div class="article-card-title">Enroll in Our Classes</div>
-        <p>
-          Ready to get hands-on experience in coding? Our free classes are open to all students! Enroll today and start your journey to become a tech leader.
-        </p>
-        </br>
-        <a href="https://docs.google.com/forms/d/1hecCP1wDRNcG-ffjWjL7d1a6jjHWeNt1PJ28XpXcZ6A/edit" target="_blank" class="cta-button" style="color: white;">Enroll Now</a>
-      </div>
+  <section class="section lavender">
+    <div class="section-wrapper">
+      <h2>Enroll in Free Coding Classes</h2>
+      <p>Dream of building websites, coding games, or creating your own app? Our beginner-friendly coding classes are taught by passionate volunteers—no experience needed.</p>
+      <p>You'll learn HTML, CSS, Python, app development, and even explore robotics through hands-on, project-based sessions. Classes are offered both live and recorded, with in-person options where available. Plus, you’ll get to join a supportive community of learners and mentors who want to see you succeed.</p>
+      <p>Come learn with us and discover your creative potential in tech!</p>
+      <a href="https://docs.google.com/forms/d/1hecCP1wDRNcG-ffjWjL7d1a6jjHWeNt1PJ28XpXcZ6A/edit" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="section-wrapper">
+      <h2>Other Ways to Get Involved</h2>
+      <p>You don’t need to be a coder or chapter leader to help power our mission. Here are other ways you can contribute:</p>
+      <ul>
+        <li><strong>Volunteer:</strong> Share your time and skills by helping teach, mentor, or manage events.</li>
+        <li><strong>Donate:</strong> Your contributions help fund laptops, materials, and scholarships for students who need them.</li>
+        <li><strong>Partner:</strong> Are you an organization, school, or tech company? Partner with us to expand opportunities for underserved youth.</li>
+      </ul>
+      <p>Every role matters in creating a more inclusive tech future. Find the one that’s right for you:</p>
+      <a href="contact.html" class="cta-button">Volunteer</a>
+      <a href="donate.html" class="cta-button">Donate</a>
+      <a href="contact.html" class="cta-button">Partner With Us</a>
     </div>
   </section>
 
@@ -67,7 +73,6 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-  
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
