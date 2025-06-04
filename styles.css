@@ -340,9 +340,11 @@ nav a:hover {
 
 /* Enhanced Values Section */
 .values-section {
+  text-align: center;
   background: linear-gradient(135deg, var(--light-bg) 0%, #e2e8f0 100%);
   position: relative;
   padding: 6rem 2rem;
+  color:#6a5acd;
 }
 
 .values-section::before {
@@ -427,9 +429,11 @@ nav a:hover {
 
 /* Enhanced Dreamer Section */
 .dreamer-section {
+  text-align: center;
   background: var(--white);
   position: relative;
   padding: 6rem 2rem;
+  color:#6a5acd;
 }
 
 .dreamer-content {
