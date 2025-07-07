@@ -28,18 +28,17 @@
 
 body {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #fff;
   color: var(--text-dark);
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* Enhanced Header */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: #fff;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(106, 90, 205, 0.1);
   padding: 1rem 2rem;
@@ -47,10 +46,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header.scrolled {
-  box-shadow: var(--shadow-light);
 }
 
 .logo-container {
@@ -68,21 +63,12 @@ header.scrolled {
   transition: var(--transition);
 }
 
-.logo-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(106, 90, 205, 0.3);
-}
-
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-purple);
 }
 
-/* Enhanced Navigation */
 nav {
   display: flex;
   gap: 2rem;
@@ -100,45 +86,43 @@ nav a {
   overflow: hidden;
 }
 
-nav a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(106, 90, 205, 0.1), transparent);
-  transition: left 0.5s;
-}
-
-nav a:hover::before {
-  left: 100%;
-}
-
 nav a:hover {
   color: var(--primary-purple);
   background: rgba(106, 90, 205, 0.05);
   transform: translateY(-2px);
 }
 
-/* Enhanced Hero Section */
-.hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.cta-button {
+  display: inline-block;
+  background: var(--accent-gold);
+  color: var(--primary-purple);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: var(--transition);
   position: relative;
   overflow: hidden;
-  padding: 8rem 2rem 6rem;
-  text-align: center;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="60" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
+.cta-button:hover {
+  background: #ffe066;
+  color: var(--dark-purple);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.18);
+}
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -158,53 +142,13 @@ nav a:hover {
 }
 
 .hero p {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.95;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2.5rem;
 }
 
-/* Enhanced CTA Button */
-.cta-button {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--accent-gold), #ffed4a);
-  color: var(--dark-purple);
-  padding: 1rem 2.5rem;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.6s;
-}
-
-.cta-button:hover::before {
-  left: 100%;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
-}
-
-/* Enhanced Sections */
 .section {
   padding: 6rem 2rem;
   position: relative;
@@ -213,10 +157,7 @@ nav a:hover {
 .section h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-purple);
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -800,16 +741,6 @@ button:focus {
 .section p + .schedule-table {
   margin-top: 3rem;
 }
-/* Light section backgrounds */
-.section.light {
-  background: var(--light-bg);
-}
-
-/* Ensure proper spacing for inline elements */
-.section p + .article-boxes,
-.section p + .schedule-table {
-  margin-top: 3rem;
-}
 
 /* Enhanced Blog Styles */
 .blog-container {
@@ -1178,59 +1109,6 @@ button:focus {
   color: var(--text-light);
   max-width: 600px;
   margin: 0 auto;
-}/* Additional blog enhancements */
-.blog-card-meta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
-.blog-card-date {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.blog-card-date::before {
-  content: '📅';
-}
-
-.blog-card-readtime {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.blog-card-readtime::before {
-  content: '⏱️';
-}
-
-/* Blog section headers */
-.blog-section-header {
-  text-align: center;
-  padding: 4rem 2rem 2rem;
-  background: linear-gradient(135deg, var(--light-bg) 0%, #e2e8f0 100%);
-}
-
-.blog-section-header h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 1rem;
-}
-
-.blog-section-header p {
-  font-size: 1.2rem;
-  color: var(--text-light);
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 /* Enhanced Projects Page Styles */
@@ -1413,7 +1291,7 @@ button:focus {
 
 /* Lavender section background */
 .section.lavender {
-  background: linear-gradient(135deg, var(--light-bg) 0%, #f3e8ff 50%, #e2e8f0 100%);
+  background: linear-gradient(135deg, var(--light-purple) 0%, var(--accent-pink-light) 60%, var(--accent-gold) 100%);
   position: relative;
 }
 
@@ -1634,93 +1512,6 @@ button:focus {
 }
 
 /* Project showcase enhancements */
-.project-showcase {
-  background: var(--white);
-  padding: 4rem 0;
-  position: relative;
-}
-
-.project-showcase-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.project-showcase h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 1rem;
-}
-
-.project-showcase p {
-  font-size: 1.125rem;
-  color: var(--text-light);
-  margin-bottom: 3rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Featured project highlighting */
-.project-card.featured {
-  grid-column: span 2;
-  flex-direction: row;
-  min-height: 300px;
-}
-
-.project-card.featured img {
-  width: 50%;
-  height: auto;
-  min-height: 300px;
-}
-
-.project-card.featured .card-content {
-  width: 50%;
-  padding: 2.5rem;
-}
-
-.project-card.featured h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.project-card.featured p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 1024px) {
-  .project-card.featured {
-    grid-column: span 1;
-    flex-direction: column;
-    min-height: 400px;
-  }
-
-  .project-card.featured img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .project-card.featured .card-content {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .project-card.featured h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .project-card.featured p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-}/* Project showcase enhancements */
 .project-showcase {
   background: var(--white);
   padding: 4rem 0;
