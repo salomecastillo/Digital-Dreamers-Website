@@ -186,4 +186,31 @@ body {
     flex-direction: column;
     gap: 1.2rem;
   }
-} 
+}
+
+.playful-theme .donation-primary {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(131, 111, 255, 0.2) 0, transparent 30%),
+    radial-gradient(circle at 10% 85%, rgba(106, 90, 205, 0.18) 0, transparent 26%),
+    linear-gradient(180deg, #f3e8ff 0%, #ffffff 42%, #f3e8ff 100%);
+}
+
+.playful-theme .donation-hero h2 {
+  background: linear-gradient(135deg, #4b0082 0%, #836fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.playful-theme .give-option,
+.playful-theme .impact-item,
+.playful-theme .tax-info {
+  border: 1.5px solid rgba(106, 90, 205, 0.24);
+  box-shadow: 0 10px 24px rgba(106, 90, 205, 0.16);
+}
+
+.playful-theme .give-option:hover,
+.playful-theme .impact-item:hover {
+  border-color: rgba(106, 90, 205, 0.4);
+  box-shadow: 0 16px 30px rgba(75, 0, 130, 0.2);
+}

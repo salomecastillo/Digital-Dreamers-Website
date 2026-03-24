@@ -4,81 +4,159 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Donate - Digital Dreamers Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="donate.css" />
 </head>
-<body>
-    <header>
-        <div class="logo-container">
-          <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
-          <div class="logo">Digital Dreamers</div>
+<body class="playful-theme page-donate">
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
+      <div class="logo">Digital Dreamers</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Dreamer Feed</a>
+      <a href="projects.html">Projects</a>
+      <a href="join.html">Join Now</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="cta-button nav-donate">Donate</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero donate-hero">
+      <div class="page-hero-orb orb-one" aria-hidden="true"></div>
+      <div class="page-hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="hero-kicker">Support the mission</p>
+          <h1>Fuel the next generation of dreamers.</h1>
+          <p class="page-hero-lead">
+            Your donation helps students gain access to technology, mentorship, and hands-on learning experiences that build confidence for the future.
+          </p>
+          <div class="hero-actions">
+            <a href="https://hcb.hackclub.com/donations/start/digital-dreamers-project" target="_blank" rel="noopener noreferrer" class="cta-button primary-cta">Donate Now</a>
+            <a href="contact.html" class="secondary-button">Partner With Us</a>
+          </div>
         </div>
-      
-        <div class="hamburger" id="hamburger">
-          &#9776;
+        <div class="page-hero-aside donate-highlight">
+          <p class="eyebrow-light">Why it matters</p>
+          <h2>Every gift helps remove barriers to tech education.</h2>
+          <p>From classroom materials to mentorship support, your generosity creates welcoming spaces where students can explore, build, and lead.</p>
         </div>
-      
-        <nav id="nav-menu">
-          <a href="index.html">Home</a>
-          <a href="blog.html">Dreamer Feed</a>
-          <a href="projects.html">Projects</a>
-          <a href="join.html">Join Now</a>
-          <a href="contact.html">Contact</a>
-          <a href="donate.html" class="cta-button" style="margin-left: 1rem;">Donate</a>
-        </nav>
-      </header>
-  <section class="section donation-primary">
-    <div class="section-wrapper">
-      <div class="donation-hero">
-        <h2>Make a Difference Today</h2>
-        <p class="donation-tagline">Your support helps bridge the digital divide for students in our communities.</p>
       </div>
-      <div class="donation-content">
-        <p>Your contribution helps us provide laptops, materials, and scholarships for students who need them most. Together, we're breaking down barriers and opening doors to technology careers for underserved youth.</p>
+    </section>
+
+    <section class="page-section">
+      <div class="container page-stack">
+        <div class="donation-hero donation-hero-panel">
+          <div>
+            <p class="section-kicker">Featured giving moment</p>
+            <h2>Help us expand access with a simple, secure donation.</h2>
+            <p class="donation-tagline">Your support makes our programming more sustainable and more reachable for students who need it most.</p>
+          </div>
+          <a href="https://hcb.hackclub.com/donations/start/digital-dreamers-project" target="_blank" rel="noopener noreferrer" class="cta-button primary-cta">Give Today</a>
+        </div>
+
+        <div class="section-heading">
+          <p class="section-kicker">Mission to impact</p>
+          <h2>A donor experience rooted in trust, clarity, and real student outcomes.</h2>
+          <p class="section-intro">
+            Digital Dreamers is building pathways into technology for young people who deserve more access, more encouragement, and more opportunities to create.
+          </p>
+        </div>
+
         <div class="ways-to-give">
-          <div class="give-option">
+          <article class="give-option">
+            <p class="card-kicker">Access</p>
             <h3>Support Student Access</h3>
-            <p>Helps provide coding materials and learning resources to students in our programs</p>
-          </div>
-          <div class="give-option">
+            <p>Help provide coding materials, workshop supplies, and welcoming learning resources for students in our programs.</p>
+          </article>
+          <article class="give-option">
+            <p class="card-kicker">Programs</p>
             <h3>Empower a Learning Journey</h3>
-            <p>Contributes toward the delivery of a full course or workshop for an aspiring coder</p>
-          </div>
-          <div class="give-option">
+            <p>Contribute toward full classes, mentorship touchpoints, and the behind-the-scenes support that keeps learning consistent.</p>
+          </article>
+          <article class="give-option">
+            <p class="card-kicker">Equity</p>
             <h3>Technology Equity Fund</h3>
-            <p>Helps us work toward providing devices for students facing tech barriers</p>
-          </div>
+            <p>Help us reduce device and access barriers so more students can participate confidently in tech education.</p>
+          </article>
         </div>
-        <div class="impact-section">
-          <h3>Your Impact</h3>
+
+        <div class="impact-section page-surface">
+          <div class="section-heading left-aligned">
+            <p class="section-kicker">Your impact</p>
+            <h2>What generosity makes possible</h2>
+          </div>
           <div class="impact-grid">
-            <div class="impact-item">
-              <div class="impact-icon">👥</div>
+            <article class="impact-item">
+              <div class="impact-icon">01</div>
               <h4>Reach More Students</h4>
-              <p>Your donation helps us expand our programs to more communities, reaching students who might otherwise be left behind in the digital age.</p>
-            </div>
-            <div class="impact-item">
-              <div class="impact-icon">🎁</div>
+              <p>Your donation helps us expand programs into more communities and welcome more students into free tech learning.</p>
+            </article>
+            <article class="impact-item">
+              <div class="impact-icon">02</div>
               <h4>Provide Resources</h4>
-              <p>We use donations to develop curriculum materials, provide technology resources, and create accessible learning environments for students.</p>
-            </div>
-            <div class="impact-item">
-              <div class="impact-icon">📅</div>
+              <p>We invest in curriculum materials, technology access, and supportive environments that make learning feel possible.</p>
+            </article>
+            <article class="impact-item">
+              <div class="impact-icon">03</div>
               <h4>Sustain Programs</h4>
-              <p>Your support ensures the sustainability of our programs, allowing us to provide ongoing support to students as they navigate the digital world.</p>
-            </div>
+              <p>Your support strengthens the long-term future of programs students can return to, grow in, and trust.</p>
+            </article>
           </div>
         </div>
+
         <div class="tax-info">
-          <h3>Tax Information</h3>
-          <p>Digital Dreamers is a fiscally sponsored project of Hack Club, a 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law.</p>
+          <div>
+            <p class="card-kicker">Giving details</p>
+            <h3>Tax Information</h3>
+            <p>Digital Dreamers is a fiscally sponsored project of Hack Club, a 501(c)(3) nonprofit organization. Donations are tax-deductible to the extent allowed by law.</p>
+          </div>
           <p class="tax-id">Tax ID: 81-2908499</p>
         </div>
-        <div class="button-center">
-          <a href="https://hcb.hackclub.com/donations/start/digital-dreamers-project" target="_blank" class="cta-button primary-cta">Donate Now</a>
-        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Digital Dreamers</h3>
+        <p>Youth-led nonprofit creating accessible pathways into technology.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Dreamer Feed</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="join.html">Join Now</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+        <a href="https://digitaldreamersproject.org/" target="_blank" rel="noopener noreferrer">digitaldreamersproject.org</a>
       </div>
     </div>
-  </section>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

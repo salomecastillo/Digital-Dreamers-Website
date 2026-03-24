@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join Digital Dreamers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
+<body class="playful-theme page-join">
+  <header class="site-header">
     <div class="logo-container">
       <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
       <div class="logo">Digital Dreamers</div>
@@ -19,57 +22,116 @@
       <a href="projects.html">Projects</a>
       <a href="join.html">Join Now</a>
       <a href="contact.html">Contact</a>
-      <a href="donate.html" class="cta-button" style="margin-left: 1rem;">Donate</a>
+      <a href="donate.html" class="cta-button nav-donate">Donate</a>
     </nav>
   </header>
 
-  <section class="section light" style="background: #fff; border-bottom: 2px solid #f3e8ff;">
-    <div class="section-wrapper">
-      <h2 style="color: #6a5acd;">Start a Digital Dreamers Chapter</h2>
-      <p style="color: #2d3748;">Ready to lead change in your school or community? Starting a Digital Dreamers chapter gives you the power to provide free, beginner-friendly tech education to those who may not otherwise have access.</p>
-      <p style="color: #2d3748;">As a chapter leader, you'll receive step-by-step guidance to launch and run your chapter, access to our curriculum and toolkits, mentorship from experienced volunteers, and promotional support to grow your group.</p>
-      <div class="button-center" style="text-align: center; margin-top: 2rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxV8fNuVSsmki6oMf2Bh-OIXOKKA4clwadQ9eGI9TiAL7AQ/viewform?usp=header" target="_blank" class="cta-button" style="box-shadow: 0 4px 16px #e8d5ff;">Apply to Start a Chapter</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section lavender" style="background: #faf7ff; border-bottom: 2px solid #e8d5ff;">
-    <div class="section-wrapper">
-      <h2 style="color: #6a5acd;">Enroll in Free Coding Classes</h2>
-      <p style="color: #2d3748;">Dream of building websites, coding games, or creating your own app? Our beginner-friendly coding classes are taught by passionate volunteers—no experience needed.</p>
-      <p style="color: #2d3748;">You'll learn HTML, CSS, Python, app development, and even explore robotics through hands-on, project-based sessions. Classes are offered both live and recorded, with in-person options where available.</p>
-      <div class="button-center" style="text-align: center; margin-top: 2rem;">
-        <a href="https://docs.google.com/forms/d/1hecCP1wDRNcG-ffjWjL7d1a6jjHWeNt1PJ28XpXcZ6A/edit" target="_blank" class="cta-button" style="box-shadow: 0 4px 16px #e8d5ff;">Enroll Now</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section light" style="background: #fff;">
-    <div class="section-wrapper">
-      <h2 style="color: #6a5acd;">Other Ways to Get Involved</h2>
-      <p style="color: #2d3748;">You don't need to be a coder or chapter leader to help power our mission. Here are other ways you can contribute:</p>
-      <div class="involvement-grid">
-        <div class="involvement-card" style="border: 1.5px solid #e8d5ff; box-shadow: 0 2px 8px #f3e8ff;">
-          <h3 style="color: #6a5acd;">🤝 Volunteer</h3>
-          <p style="color: #2d3748;">Share your time and skills by helping teach, mentor, or manage events.</p>
-          <div class="button-center" style="text-align: center; margin-top: 1rem;">
-            <a href="contact.html" class="cta-button" style="box-shadow: 0 4px 16px #e8d5ff;">Volunteer</a>
-          </div>
+  <main>
+    <section class="page-hero join-hero">
+      <div class="page-hero-orb orb-one" aria-hidden="true"></div>
+      <div class="page-hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container join-hero-grid">
+        <div class="join-hero-image-wrap">
+          <img src="images/DDP-Day-Two.jpg" alt="Students smiling in a Digital Dreamers class" class="join-hero-image">
         </div>
-        <div class="involvement-card" style="border: 1.5px solid #e8d5ff; box-shadow: 0 2px 8px #f3e8ff;">
-          <h3 style="color: #6a5acd;">🤝 Partner</h3>
-          <p style="color: #2d3748;">Are you an organization, school, or tech company? Partner with us to expand opportunities.</p>
-          <div class="button-center" style="text-align: center; margin-top: 1rem;">
-            <a href="contact.html" class="cta-button" style="box-shadow: 0 4px 16px #e8d5ff;">Partner With Us</a>
+        <div class="join-hero-content page-hero-copy">
+          <p class="hero-kicker">Join the movement</p>
+          <h1>Find your place in a youth-led mission to close the digital divide.</h1>
+          <p class="page-hero-lead">Whether you want to lead, learn, mentor, or partner, Digital Dreamers offers meaningful ways to build opportunity with us.</p>
+          <div class="hero-actions">
+            <a href="#join-opportunities" class="cta-button">See Opportunities</a>
+            <a href="contact.html" class="secondary-button">Talk With Our Team</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    2025 Digital Dreamers. Built with 💜 by passionate students.
+    <section id="join-opportunities" class="page-section">
+      <div class="container page-stack">
+        <div class="section-heading">
+          <p class="section-kicker">Opportunities</p>
+          <h2>Choose a path that matches how you want to contribute.</h2>
+          <p class="section-intro">
+            Every role helps expand access to technology, from launching new chapters to mentoring students and building community partnerships.
+          </p>
+        </div>
+        <div class="join-card-grid">
+          <article class="join-card">
+            <p class="card-kicker">Lead</p>
+            <h3>Start a Digital Dreamers Chapter</h3>
+            <p>Lead change in your school or community with free, beginner-friendly tech education.</p>
+            <p>Get launch guidance, curriculum toolkits, mentorship, and promotional support.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxV8fNuVSsmki6oMf2Bh-OIXOKKA4clwadQ9eGI9TiAL7AQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="cta-button">Apply as Chapter Lead</a>
+          </article>
+
+          <article class="join-card">
+            <p class="card-kicker">Learn</p>
+            <h3>Enroll in Free Coding Classes</h3>
+            <p>Learn web development, Python, app-building, and robotics with project-based sessions.</p>
+            <p>No experience needed. Classes are designed for beginners and taught by passionate mentors.</p>
+            <a href="https://docs.google.com/forms/d/1hecCP1wDRNcG-ffjWjL7d1a6jjHWeNt1PJ28XpXcZ6A/edit" target="_blank" rel="noopener noreferrer" class="cta-button">Enroll Now</a>
+          </article>
+
+          <article class="join-card">
+            <p class="card-kicker">Volunteer</p>
+            <h3>Volunteer</h3>
+            <p>Support students by teaching, mentoring, helping with events, or strengthening operations.</p>
+            <a href="contact.html" class="cta-button">Volunteer</a>
+          </article>
+
+          <article class="join-card">
+            <p class="card-kicker">Partner</p>
+            <h3>Partner With Us</h3>
+            <p>Schools, nonprofits, and companies can partner with us to expand opportunities for youth.</p>
+            <a href="contact.html" class="cta-button">Become a Partner</a>
+          </article>
+        </div>
+
+        <div class="info-grid three-up">
+          <article class="feature-card">
+            <p class="card-kicker">Community</p>
+            <h3>Belong to something student-led</h3>
+            <p>Digital Dreamers creates spaces where leadership, creativity, and inclusion are built into the experience.</p>
+          </article>
+          <article class="feature-card">
+            <p class="card-kicker">Growth</p>
+            <h3>Build confidence with real support</h3>
+            <p>Students and volunteers alike grow through mentorship, collaboration, and hands-on learning opportunities.</p>
+          </article>
+          <article class="feature-card">
+            <p class="card-kicker">Impact</p>
+            <h3>Help expand access to tech education</h3>
+            <p>Every chapter lead, class participant, volunteer, and partner strengthens our mission in a tangible way.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Digital Dreamers</h3>
+        <p>Youth-led nonprofit creating accessible pathways into technology.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Dreamer Feed</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="join.html">Join Now</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+        <a href="https://digitaldreamersproject.org/" target="_blank" rel="noopener noreferrer">digitaldreamersproject.org</a>
+      </div>
+    </div>
   </footer>
 
   <script>
@@ -80,3 +142,4 @@
     });
   </script>
 </body>
+</html>

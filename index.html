@@ -4,222 +4,247 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Digital Dreamers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
+<body class="homepage playful-theme">
+  <header class="site-header">
     <div class="logo-container">
       <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
       <div class="logo">Digital Dreamers</div>
     </div>
-  
-    <div class="hamburger" id="hamburger">
-      &#9776;
-    </div>
-  
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
     <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html">Dreamer Feed</a>
       <a href="projects.html">Projects</a>
       <a href="join.html">Join Now</a>
       <a href="contact.html">Contact</a>
-      <a href="donate.html" class="cta-button" style="margin-left: 1rem;">Donate</a>
+      <a href="donate.html" class="cta-button nav-donate">Donate</a>
     </nav>
   </header>
-  
-  
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Dream in Code. Lead with Heart.</h1>
-      <p>We're on a mission to make tech education accessible, inclusive, and inspiring for all.</p>
-      <a href="join.html" class="cta-button"> Join Now</a>
-    </div>
-  </section>
-
-  <section id="about" class="section light about-container" style="background: #fff; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>Digital Dreamers is a student-powered organization that helps underrepresented youth explore the world of technology through free, fun, hands-on learning and community projects.</p>
-    </div>
-    <div class="about-image">
-      <img src="images/DDP-Day-Two.jpg" alt="Digital Dreamers Class">
-    </div>
-  </section>
-  
-
-  <section id="mission" class="section lavender">
-    <h2>Our Mission</h2>
-    <p>We believe every kid—regardless of background—deserves a chance to dream big, build bold, and lead in the digital world. Through workshops, mentorship, and innovation, we're helping shape the future one coder at a time.</p>
-    
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; margin-top: 2rem;">
-      <!-- Image on the left -->
-      <div style="flex: 1 1 300px; max-width: 500px;">
-        <img src="images/DDP-Class.jpg" 
-             alt="Empowering youth with tech" 
-             style="width: 100%; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-      </div>
-  
-      <!-- New supporting text on the right -->
-      <div style="flex: 1 1 300px; max-width: 600px; text-align: justify;">
-        <p style="font-size: 1.1rem;">
-          From interactive coding labs to real-world projects, we equip students with the tools to not only thrive in tech—but to lead with purpose. Every lesson is a step toward breaking barriers and creating opportunity where it's needed most.
-        </p>
-      </br>
-
-      <p style="text-align: justify;">
-        We believe that innovation grows where inclusivity thrives. That's why our curriculum emphasizes collaboration, creativity, and confidence—empowering students to see themselves not just as learners, but as changemakers. Through mentorship, hands-on experience, and a strong support network, we're building a future where every student has a seat at the table—and the skills to shape what's next.
-      </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="values-section">
-    <h2>Our Values</h2>
-    <div class="values-container">
-      <div class="value-circle">
-        <h3>Inclusion</h3>
-        <p>We celebrate every background and ensure everyone feels welcome and heard.</p>
-      </div>
-      <div class="value-circle">
-        <h3>Creativity</h3>
-        <p>We encourage imaginative thinking and unique problem-solving in every project.</p>
-      </div>
-      <div class="value-circle">
-        <h3>Community</h3>
-        <p>We build bridges through collaboration and mutual support.</p>
-      </div>
-      <div class="value-circle">
-        <h3>Confidence</h3>
-        <p>We help students believe in their ability to succeed and lead in tech.</p>
-      </div>
-    </div>
-  </section>
-  
-
-  <section class="dreamer-section">
-    <h2>Dreamer Of The Month</h2>
-    <div class="dreamer-content">
-      <div class="dreamer-description-container">
-        <p class="dreamer-description">
-          We're incredibly proud to celebrate Henry as our Dreamer of the Month! From day one, Henry has shown a level of focus, determination, and creativity that continues to impress. Every challenge is met with excitement, and every lesson is an opportunity for Henry to explore, learn, and grow beyond expectations.
-        </p>
-        
-        <p class="dreamer-description">
-          Henry has made incredible strides in coding, having completed several impressive projects that showcase a deep understanding of both logic and design. From building interactive games to experimenting with advanced features, Henry approaches each project with independence and a problem-solving mindset that reflects true growth. The progress Henry has made in such a short time is nothing short of inspiring.
-        </p>
-        
-        <p class="dreamer-description">
-          Henry also stands out for a willingness to explore new ideas and tackle complex tasks head-on. Even when a project gets challenging, Henry remains focused and persistent, always seeking out solutions and pushing each creation to the next level. It's clear that coding is more than just a skill for Henry — it's a passion and a pathway to innovation.
-        </p>
-        
-        <p class="dreamer-description">
-          Henry, we're so excited to recognize your hard work, creativity, and independence. Keep building, keep exploring, and keep dreaming — your journey is just beginning, and we can't wait to see what you'll create next.
-        </p>
-      
-
-        <div class="card-content">
-          <a href="https://scratch.mit.edu/projects/1183499224" target="_blank"> Check Out Henry's Project</a>
+  <main>
+    <section class="hero-v2">
+      <div class="hero-accent hero-accent-one" aria-hidden="true"></div>
+      <div class="hero-accent hero-accent-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Student-led. Community-powered.</p>
+          <h1>Close the digital divide, one dreamer at a time.</h1>
+          <p class="hero-subtext">
+            Digital Dreamers helps youth build confidence in technology through free classes, mentorship, and real-world projects that turn curiosity into opportunity.
+          </p>
+          <div class="hero-actions">
+            <a href="join.html" class="cta-button">Get Involved</a>
+            <a href="donate.html" class="secondary-button">Donate Today</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/DDP-Day-Two.jpg" alt="Students participating in a Digital Dreamers class">
         </div>
       </div>
-  
-      <img src="images/henry.jpeg" alt="A child dreamer" class="dreamer-image" />
-    </div>
-  </section>
-  
-  
+    </section>
 
-  <section id="contact" class="section light">
-    <h2>Learn More From The Perspective Of The Community</h2>
-    <div class="article-boxes">
-      <div class="article-card">
-        <div class="article-card-title">The Boston Globe</div>
-        <p>
-          Check out an article about us written by The
-          <a href="https://www.bostonglobe.com/2025/03/11/metro/new-hampshire-teenagers-free-coding-class-digital-dreamers/" target="_blank">Boston Globe</a>
-        </p>
+    <section class="section-v2 impact-section">
+      <div class="container">
+        <h2>Our Impact</h2>
+        <p class="section-lead">Growing access to tech education with measurable results.</p>
+        <div class="impact-grid">
+          <article class="metric-card">
+            <h3>500+</h3>
+            <p>Students impacted</p>
+          </article>
+          <article class="metric-card">
+            <h3>45+</h3>
+            <p>Mentors and volunteers</p>
+          </article>
+          <article class="metric-card">
+            <h3>120+</h3>
+            <p>Lessons and programs delivered</p>
+          </article>
+        </div>
       </div>
-      <div class="article-card">
-        <div class="article-card-title">The Nashua Ink Link</div>
-        <p>
-          Check out an article about us written by The
-          <a href="https://nashua.inklink.news/digital-dreamers-nashua-south-students-start-free-computer-science-program-for-local-youth/" target="_blank">Nashua Ink Link</a>
-        </p>
+    </section>
+
+    <section class="section-v2 recognition-band">
+      <div class="container recognition-inner">
+        <div>
+          <p class="recognition-tag">National Recognition</p>
+          <h2>Granite Staters of the Month</h2>
+          <p>
+            Digital Dreamers co-founders were recognized by U.S. Senator Maggie Hassan as Granite Staters of the Month for expanding free, youth-led tech education in our community.
+          </p>
+        </div>
+        <a href="https://www.hassan.senate.gov/news/press-releases/senator-hassan-recognizes-meenakshi-dwaraka-and-salome-castillo-valencia-of-nashua-as-aprils-granite-staters-of-the-month" target="_blank" rel="noopener noreferrer" class="secondary-button">Read the Recognition</a>
       </div>
-      <div class="article-card">
-        <div class="article-card-title">United Way of Greater Nashua</div>
-        <p>
-          Check out an article about us written by
-          <a href="https://unitedwaynashua.org/featured/digital-dreamers-project/" target="_blank">United Way of Greater Nashua</a>
-        </p>
+    </section>
+
+    <section class="section-v2">
+      <div class="container mission-grid">
+        <div>
+          <h2>Our Mission</h2>
+          <p class="section-lead left">
+            We empower youth from underrepresented communities to see themselves as creators, innovators, and leaders in technology.
+          </p>
+          <div class="mission-points">
+            <article class="mission-point">
+              <span class="mission-icon" aria-hidden="true">01</span>
+              <div>
+                <h3>Hands-on Learning</h3>
+                <p>Workshops make coding approachable with project-based lessons and practical skills.</p>
+              </div>
+            </article>
+            <article class="mission-point">
+              <span class="mission-icon" aria-hidden="true">02</span>
+              <div>
+                <h3>Mentorship That Matters</h3>
+                <p>Dream Match connects students with mentors who guide growth and confidence.</p>
+              </div>
+            </article>
+            <article class="mission-point">
+              <span class="mission-icon" aria-hidden="true">03</span>
+              <div>
+                <h3>Future-Ready Pathways</h3>
+                <p>Students build portfolios and leadership skills that open doors to future opportunities.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="mission-image-wrap">
+          <img src="images/DDP-Class.jpg" alt="Digital Dreamers coding workshop">
+        </div>
       </div>
-      <div class="article-card">
-        <div class="article-card-title">Congressional Recognition</div>
-        <p>
-          Check out a recognition issued by
-          <a href="https://www.hassan.senate.gov/news/press-releases/senator-hassan-recognizes-meenakshi-dwaraka-and-salome-castillo-valencia-of-nashua-as-aprils-granite-staters-of-the-month" target="_blank">Senator Maggie Hassan</a>
-        </p>
+    </section>
+
+    <section class="section-v2 programs-section">
+      <div class="container">
+        <h2>What We Do</h2>
+        <p class="section-lead">Programs designed to spark confidence, creativity, and long-term opportunity.</p>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="program-icon" aria-hidden="true">W</div>
+            <h3>Workshops</h3>
+            <p>Interactive classes that teach coding, digital literacy, and problem-solving in a supportive environment.</p>
+            <a href="join.html">Learn more</a>
+          </article>
+          <article class="program-card">
+            <div class="program-icon" aria-hidden="true">M</div>
+            <h3>Dream Match Mentorship</h3>
+            <p>One-on-one mentorship that helps students set goals, stay motivated, and explore careers in tech.</p>
+            <a href="join.html">Learn more</a>
+          </article>
+          <article class="program-card">
+            <div class="program-icon" aria-hidden="true">P</div>
+            <h3>Student Projects</h3>
+            <p>Real-world projects where students apply what they learn and showcase their creativity publicly.</p>
+            <a href="projects.html">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-v2">
+      <div class="container">
+        <h2>Meet Our Team</h2>
+        <p class="section-lead">A youth-driven team committed to making tech education equitable and inspiring.</p>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar">MS</div>
+            <h3>Meenakshi S.</h3>
+            <p class="role">Co-Founder</p>
+            <p>Leads partnerships and program strategy to expand Digital Dreamers into more communities.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar">SC</div>
+            <h3>Salome C.</h3>
+            <p class="role">Co-Founder</p>
+            <p>Drives curriculum quality and student experience with a focus on confidence and inclusion.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar">DV</div>
+            <h3>Dreamer Volunteers</h3>
+            <p class="role">Mentors & Instructors</p>
+            <p>Our volunteer mentors support students in class, in projects, and in their personal growth journeys.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-v2 testimonials-section">
+      <div class="container">
+        <h2>What Our Community Says</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>"Digital Dreamers gave my child confidence with technology and a community that truly believes in them."</p>
+            <h3>Parent</h3>
+            <span>Program Family</span>
+          </article>
+          <article class="testimonial-card">
+            <p>"Mentoring here is deeply meaningful. Students are curious, creative, and excited to build."</p>
+            <h3>Volunteer Mentor</h3>
+            <span>Dream Match Program</span>
+          </article>
+          <article class="testimonial-card">
+            <p>"I used to feel nervous around coding. Now I can build projects and help my classmates too."</p>
+            <h3>Student Dreamer</h3>
+            <span>Workshop Participant</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-v2 cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Help us close the digital divide.</h2>
+          <p>Your support helps us provide free tech education, mentorship, and opportunity for every dreamer.</p>
+        </div>
+        <div class="hero-actions">
+          <a href="donate.html" class="cta-button">Donate</a>
+          <a href="join.html" class="secondary-button">Join Us</a>
+          <a href="contact.html" class="secondary-button">Partner</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Digital Dreamers</h3>
+        <p>Youth-led nonprofit creating accessible pathways into technology.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Dreamer Feed</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="join.html">Join Now</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+        <a href="https://digitaldreamersproject.org/" target="_blank" rel="noopener noreferrer">digitaldreamersproject.org</a>
       </div>
     </div>
-  </section>
-
-  <section id="schedule" class="section light">
-    <h2>Class Schedule</h2>
-    <p>Check out when our upcoming sessions are happening! All sessions are free and open to students.</p>
-    <div class="schedule-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Class</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tuesday [April 22]</td>
-            <td>6:00pm - 7:00 pm</td>
-            <td>Scratch Challenges</td>
-            <td>Arlington Street Community Center, Nashua NH</td>
-          </tr>
-          <tr>
-            <td>Tuesday [May 6] </td>
-            <td>6:00pm - 7:00 pm</td>
-            <td>Online Safety 101</td>
-            <td>Arlington Street Community Center, Nashua NH</td>
-          </tr>
-          <tr>
-            <td>Tuesday [May 13]</td>
-            <td>6:00pm - 7:00 pm</td>
-            <td>Intro to robotics programming</td>
-            <td>Arlington Street Community Center, Nashua NH</td>
-          </tr>
-          <tr>
-            <td>Tuesday [May 20]</td>
-            <td>6:00pm - 7:00 pm</td>
-            <td> Scratch Personal Project</td>
-            <td>Arlington Street Community Center, Nashua NH</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  
-  
-  
-
-  <footer>
-    2025 Digital Dreamers. Built with 💜 by passionate students.
   </footer>
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-  
+
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
   </script>
-  
 </body>
 </html>

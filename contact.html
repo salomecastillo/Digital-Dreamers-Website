@@ -4,65 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Digital Dreamers - Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
+<body class="playful-theme page-contact">
+  <header class="site-header">
     <div class="logo-container">
       <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
       <div class="logo">Digital Dreamers</div>
     </div>
-  
-    <div class="hamburger" id="hamburger">
-      &#9776;
-    </div>
-  
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
     <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html">Dreamer Feed</a>
       <a href="projects.html">Projects</a>
       <a href="join.html">Join Now</a>
       <a href="contact.html">Contact</a>
-      <a href="donate.html" class="cta-button" style="margin-left: 1rem;">Donate</a>
+      <a href="donate.html" class="cta-button nav-donate">Donate</a>
     </nav>
   </header>
-  
-  
 
-  <section class="section lavender contact-section">
-    <div class="contact-container">
-      <h2>Contact Us</h2>
-      <p>Have a question, idea, or want to get involved? We'd love to hear from you!</p>
-      <p> Or get in touch directly at: digitaldreamersprojectinfo@gmail.com </p>
-      <form class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="page-hero-orb orb-one" aria-hidden="true"></div>
+      <div class="page-hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="hero-kicker">Contact Digital Dreamers</p>
+          <h1>Start a conversation that moves opportunity forward.</h1>
+          <p class="page-hero-lead">
+            Reach out for student enrollment, volunteer opportunities, partnerships, speaking requests, or questions about how we can support your community.
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:digitaldreamersprojectinfo@gmail.com" class="cta-button">Email Us</a>
+            <a href="join.html" class="secondary-button">Explore Ways to Join</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required />
+        <div class="page-hero-aside hero-info-card">
+          <p class="eyebrow-light">Quick Contact</p>
+          <h2>We would love to hear from you.</h2>
+          <div class="hero-contact-list">
+            <div>
+              <span>Email</span>
+              <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+            </div>
+            <div>
+              <span>Partnerships</span>
+              <p>Schools, companies, and nonprofits are welcome.</p>
+            </div>
+            <div>
+              <span>Response Time</span>
+              <p>We aim to follow up within a few school days.</p>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container page-stack">
+        <div class="section-heading">
+          <p class="section-kicker">Get in touch</p>
+          <h2>Questions, partnerships, and volunteer interest all belong here.</h2>
+          <p class="section-intro">
+            We designed this page to make it easy to connect with the right next step, whether you want to collaborate, support our programs, or learn more.
+          </p>
         </div>
-        <button type="submit" class="cta-button">Send Message</button>
-      </form>
+
+        <div class="contact-layout">
+          <aside class="contact-side page-surface">
+            <div class="contact-side-block">
+              <p class="mini-label">Best for</p>
+              <h3>Partnerships and community collaboration</h3>
+              <p>Tell us about your school, organization, or idea and we will help you find the best way to work together.</p>
+            </div>
+            <div class="contact-method-grid">
+              <article class="contact-method-card">
+                <span class="contact-method-tag">Email</span>
+                <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+              </article>
+              <article class="contact-method-card">
+                <span class="contact-method-tag">Volunteer</span>
+                <p>Interested in teaching, mentoring, or supporting events? Let us know in your message.</p>
+              </article>
+              <article class="contact-method-card">
+                <span class="contact-method-tag">Students</span>
+                <p>Looking for classes or programs? We can point you to current opportunities.</p>
+              </article>
+            </div>
+          </aside>
+
+          <div class="contact-container contact-card">
+            <h2>Send a message</h2>
+            <p class="contact-card-intro">Share a few details and we will follow up with the best next step.</p>
+            <form class="contact-form site-form" action="mailto:digitaldreamersprojectinfo@gmail.com" method="post" enctype="text/plain">
+              <div class="contact-grid-two">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.org" required />
+                </div>
+              </div>
+              <div class="contact-grid-two">
+                <div class="form-group">
+                  <label for="organization">Organization</label>
+                  <input type="text" id="organization" name="organization" placeholder="School, nonprofit, company, or individual" />
+                </div>
+                <div class="form-group">
+                  <label for="topic">How can we help?</label>
+                  <input type="text" id="topic" name="topic" placeholder="Partnership, volunteering, classes, media, other" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us a little about what you are looking for." required></textarea>
+              </div>
+              <button type="submit" class="cta-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section-soft">
+      <div class="container">
+        <div class="info-grid three-up">
+          <article class="feature-card">
+            <p class="card-kicker">Partnerships</p>
+            <h3>Bring programs to your community</h3>
+            <p>We collaborate with schools, libraries, and local organizations to create accessible learning experiences.</p>
+          </article>
+          <article class="feature-card">
+            <p class="card-kicker">Volunteering</p>
+            <h3>Support students with your time</h3>
+            <p>Mentors, instructors, and event supporters all help us create welcoming, high-impact programming.</p>
+          </article>
+          <article class="feature-card">
+            <p class="card-kicker">Media and events</p>
+            <h3>Invite Digital Dreamers into the conversation</h3>
+            <p>We are always excited to share youth-led impact stories and connect with aligned opportunities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Digital Dreamers</h3>
+        <p>Youth-led nonprofit creating accessible pathways into technology.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Dreamer Feed</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="join.html">Join Now</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+        <a href="https://digitaldreamersproject.org/" target="_blank" rel="noopener noreferrer">digitaldreamersproject.org</a>
+      </div>
     </div>
-  </section>
-
-  <footer>
-     2025 Digital Dreamers. Built with 💜 by passionate students.
   </footer>
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-  
+
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
   </script>
-  
 </body>
 </html>
