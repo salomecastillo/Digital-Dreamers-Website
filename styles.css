@@ -762,6 +762,22 @@ nav a:hover {
   border-bottom: 1px solid rgba(106, 90, 205, 0.18);
   border-radius: 0;
   box-shadow: none;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease, border-color 0.22s ease;
+}
+
+.homepage .impact-section .metric-card:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.homepage .impact-section .metric-card:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.homepage .impact-section .metric-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .homepage .impact-section .metric-card h3 {
@@ -770,6 +786,7 @@ nav a:hover {
   font-size: clamp(1.2rem, 2.2vw, 1.55rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
 }
 
 .homepage .impact-section .metric-card p strong {
@@ -1537,6 +1554,65 @@ footer {
   animation: fadeInUp 0.55s ease both;
 }
 
+.animations-ready .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.animations-ready .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animations-ready .hero-media.reveal,
+.animations-ready .mission-image-wrap.reveal,
+.animations-ready .join-hero-image-wrap.reveal {
+  transform: translateY(18px) scale(0.985);
+}
+
+.animations-ready .hero-media.reveal.is-visible,
+.animations-ready .mission-image-wrap.reveal.is-visible,
+.animations-ready .join-hero-image-wrap.reveal.is-visible {
+  transform: translateY(0) scale(1);
+}
+
+.program-card,
+.join-card,
+.project-card,
+.blog-card,
+.team-card,
+.testimonial-card,
+.feature-card,
+.contact-method-card {
+  will-change: transform;
+}
+
+.hero-media img,
+.mission-image-wrap img,
+.join-hero-image {
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.hero-media:hover img,
+.mission-image-wrap:hover img,
+.join-hero-image-wrap:hover .join-hero-image {
+  transform: translateY(-3px) scale(1.01);
+}
+
+.cta-button,
+.secondary-button,
+.filter-pill,
+.blog-modal-close {
+  will-change: transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1545,6 +1621,18 @@ footer {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .homepage .impact-section .metric-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .animations-ready .reveal,
+  .animations-ready .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 
