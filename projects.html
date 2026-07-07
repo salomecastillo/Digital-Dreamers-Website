@@ -6,7 +6,7 @@
   <title>Student Projects | Digital Dreamers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="playful-theme page-projects">
@@ -28,57 +28,81 @@
     </nav>
   </header>
 
+  <main>
+  <section class="projects-hero">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Student portfolio</p>
+        <h1>Projects built by Digital Dreamers students.</h1>
+        <p class="section-intro">
+          A showcase of beginner-friendly games and creative coding projects that help students practice logic, design, storytelling, and persistence.
+        </p>
+        <div class="project-filter-bar" aria-label="Project categories">
+          <button type="button" class="filter-pill active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-pill" data-filter="scratch">Scratch Games</button>
+          <button type="button" class="filter-pill" data-filter="beginner">Beginner Builds</button>
+          <button type="button" class="filter-pill" data-filter="creative">Student Creativity</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="projects" class="section lavender">
-    <h2>Student Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
+    <div class="container project-grid">
+      <div class="project-card" data-categories="scratch beginner creative">
         <img src="images/catAndMouse.png" alt="Cat and Mouse">
         <div class="card-content">
+          <p class="project-meta">Scratch game</p>
           <h3>Cat and Mouse</h3>
           <p>A beginner-friendly cat and mouse game created by a passionate elementary school student.</p>
           <a href="https://scratch.mit.edu/projects/1162303072/" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-categories="scratch beginner creative">
         <img src="images/dinoGame.png" alt="Dino Dash">
         <div class="card-content">
+          <p class="project-meta">Game design</p>
           <h3>Dino Dash</h3>
           <p>A quick-paced dinosaur dash game inspired by the offline dino game and built by a dedicated elementary student.</p>
           <a href="https://scratch.mit.edu/projects/1162303072/" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-categories="scratch creative">
         <img src="images/whack-a-wizard.png" alt="Whack-A-Wizard">
         <div class="card-content">
+          <p class="project-meta">Interactive game</p>
           <h3>Whack-A-Wizard</h3>
           <p>A playful take on whack-a-mole built by a persevering dreamer who has been part of the project from the start.</p>
           <a href="https://scratch.mit.edu/projects/1162586402/" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-categories="scratch creative">
         <img src="images/strawberryDash.png" alt="Strawberry Dash">
         <div class="card-content">
+          <p class="project-meta">Arcade challenge</p>
           <h3>Strawberry Dash</h3>
           <p>A creative geometry-dash-inspired project made by a student who loves game development.</p>
           <a href="https://scratch.mit.edu/projects/1175039325" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-categories="scratch beginner">
         <img src="images/pongDeluxe.png" alt="Pong Deluxe">
         <div class="card-content">
+          <p class="project-meta">Classic remake</p>
           <h3>Pong Deluxe</h3>
           <p>A custom Pong game where players bounce the ball, score points, and practice game design and logic through play.</p>
           <a href="https://scratch.mit.edu/projects/1190848223" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-categories="scratch creative">
         <img src="images/BatFighter.png" alt="Bat Fighter">
         <div class="card-content">
+          <p class="project-meta">Arcade game</p>
           <h3>Bat Fighter</h3>
           <p>An arcade-style game where players fly as a bat, dodge obstacles, and battle through fast-paced challenges.</p>
           <a href="https://scratch.mit.edu/projects/1195417693" target="_blank" rel="noopener noreferrer">View Project</a>
@@ -86,6 +110,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -118,6 +143,25 @@
 
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
+    });
+
+    const filterButtons = document.querySelectorAll('.filter-pill');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((item) => {
+          item.classList.toggle('active', item === button);
+        });
+
+        projectCards.forEach((card) => {
+          const categories = card.dataset.categories.split(' ');
+          const shouldShow = filter === 'all' || categories.includes(filter);
+          card.classList.toggle('is-hidden', !shouldShow);
+        });
+      });
     });
   </script>
 </body>

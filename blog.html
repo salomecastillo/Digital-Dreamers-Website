@@ -6,7 +6,7 @@
   <title>Blog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="playful-theme page-blog">
@@ -29,8 +29,20 @@
       <a href="donate.html" class="cta-button nav-donate">Donate</a>
     </nav>
   </header>
-      
-  <section>
+  <main>
+  <section class="feed-hero">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Dreamer Feed</p>
+        <h1>Stories from the students and leaders building Digital Dreamers.</h1>
+        <p class="section-intro">
+          Reflections on tech education, community, leadership, and the moments that make youth-led impact feel real.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Dreamer Feed articles">
     <div class="blog-container">
       <!-- Blog Cards -->
       <div class="blog-card" onclick="openBlog(1)">
@@ -64,8 +76,9 @@
         <div class="blog-card-author">Manisha Chourasia</div>
         <div class="blog-card-excerpt">At Digital Dreamers, we didn't just set out to teach kids how to code—we set out to inspire them to dream bigger, build boldly, and believe in their ability to create. As teen co-founders, we've faced challenges, grown as leaders, and seen firsthand how tech education can transform lives. This is our story—and it's only the beginning...</div>
       </div>
-
+    </div>
     </section>
+  </main>
 
   <!-- Modal for Full Article -->
   <div id="blog-modal" class="blog-modal">
