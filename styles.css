@@ -193,6 +193,7 @@ nav a:hover {
 .page-blog nav a[href="blog.html"],
 .page-projects nav a[href="projects.html"],
 .page-join nav a[href="join.html"],
+.page-report nav a[href="ai-report.html"],
 .page-contact nav a[href="contact.html"],
 .page-donate nav a[href="donate.html"]:not(.nav-donate) {
   color: #ffffff;
@@ -1182,6 +1183,42 @@ nav a:hover {
 .contact-form .cta-button {
   width: 100%;
   border-radius: 16px;
+}
+
+/* AI Literacy Report */
+.report-form-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(131, 111, 255, 0.11), transparent 24%),
+    linear-gradient(180deg, #ffffff, var(--purple-50));
+}
+
+.report-form-card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(12px, 2.5vw, 24px);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(131, 111, 255, 0.12), transparent 26%),
+    #ffffff;
+}
+
+.report-form-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--purple-900), var(--purple-500));
+}
+
+.report-form-card iframe {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  min-height: 1678px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 /* Donate */

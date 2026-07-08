@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 New Hampshire AI Literacy Report - Digital Dreamers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="playful-theme page-report">
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="images/DDP-star-logo.png" alt="Digital Dreamers Logo" class="logo-img">
+      <div class="logo">Digital Dreamers</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Dreamer Feed</a>
+      <a href="projects.html">Projects</a>
+      <a href="join.html">Join Now</a>
+      <a href="ai-report.html">AI Report</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="cta-button nav-donate">Donate</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero report-hero">
+      <div class="page-hero-orb orb-one" aria-hidden="true"></div>
+      <div class="page-hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="hero-kicker">Statewide AI literacy study</p>
+          <h1>2026 New Hampshire AI Literacy Report</h1>
+          <p class="page-hero-lead">
+            Help us measure how prepared New Hampshire students and teachers are for an AI-driven world and identify gaps in AI education.
+          </p>
+          <div class="hero-actions">
+            <a href="#ai-literacy-form" class="cta-button">Complete the Form</a>
+            <a href="contact.html" class="secondary-button">Ask a Question</a>
+          </div>
+        </div>
+        <div class="page-hero-aside hero-info-card">
+          <p class="eyebrow-light">Why participate</p>
+          <h2>Your input helps shape future-ready learning.</h2>
+          <div class="hero-contact-list">
+            <div>
+              <span>Focus</span>
+              <p>Student and teacher readiness for an AI-driven world.</p>
+            </div>
+            <div>
+              <span>Goal</span>
+              <p>Identify education gaps and opportunities across New Hampshire.</p>
+            </div>
+            <div>
+              <span>Hosted by</span>
+              <p>Digital Dreamers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai-literacy-form" class="page-section report-form-section">
+      <div class="container page-stack">
+        <div class="section-heading">
+          <p class="section-kicker">Share your perspective</p>
+          <h2>Take part in the New Hampshire AI literacy study.</h2>
+          <p class="section-intro">
+            The form below is embedded directly from Google Forms so responses are collected securely in the original survey.
+          </p>
+        </div>
+
+        <div class="report-form-card page-surface">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdRj4sHJrUQh1yrDtGf-7vsJE2ohrmVNc2xfoneTiHTQygSRw/viewform?embedded=true"
+            title="2026 New Hampshire AI Literacy Report form"
+            width="640"
+            height="1678"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Digital Dreamers</h3>
+        <p>Youth-led nonprofit creating accessible pathways into technology.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Dreamer Feed</a>
+        <a href="ai-report.html">AI Report</a>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <a href="join.html">Join Now</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="mailto:digitaldreamersprojectinfo@gmail.com">digitaldreamersprojectinfo@gmail.com</a>
+        <a href="https://digitaldreamersproject.org/" target="_blank" rel="noopener noreferrer">digitaldreamersproject.org</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  <script src="site.js"></script>
+</body>
+</html>

@@ -23,6 +23,7 @@
     '.contact-side',
     '.contact-card',
     '.contact-method-card',
+    '.report-form-card',
     '.tax-info'
   ];
 
