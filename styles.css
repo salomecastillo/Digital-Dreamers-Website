@@ -1195,6 +1195,8 @@ nav a:hover {
 .report-form-card {
   position: relative;
   overflow: hidden;
+  width: min(100%, 760px);
+  margin-inline: auto;
   padding: clamp(12px, 2.5vw, 24px);
   border-radius: var(--radius-lg);
   background:
@@ -1213,7 +1215,7 @@ nav a:hover {
 .report-form-card iframe {
   display: block;
   width: 100%;
-  max-width: 760px;
+  max-width: 640px;
   min-height: 1678px;
   margin: 0 auto;
   border: 0;
